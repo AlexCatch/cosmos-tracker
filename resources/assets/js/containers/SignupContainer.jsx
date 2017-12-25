@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import NavBar from '../components/Navbar';
+import Signup from '../components/Signup';
 
-const NavBarContainer = props => <NavBar {...props} />;
+const SignupContainer = props => <Signup {...this.props}/>;
 
 const mapStateToProps = (state) => {
     return {
@@ -10,4 +10,4 @@ const mapStateToProps = (state) => {
     }
 };
 
-export default connect(mapStateToProps)(NavBarContainer);
+export default connect(mapStateToProps)(SignupContainer);

@@ -5,7 +5,9 @@ import Root from '../components/Root';
 const RootContainer = props => <Root {...props} />;
 
 const mapStateToProps = (state) => {
-    return state;
+    return {
+        authenticated: state.auth.authToken !== null
+    }
 };
 
 export default connect(mapStateToProps)(RootContainer);

@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::view('/{path?}', 'index')
+    ->where('path', '.*')
+    ->name('react');
+
