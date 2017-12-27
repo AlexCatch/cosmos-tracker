@@ -21,13 +21,13 @@ export default class Navbar extends Component {
         super();
         this.state = {
             isOpen: false
-        }
+        };
         this.toggle = this.toggle.bind(this);
     }
     render() {
         return (
                 <ReactstrapNav color="primary" dark expand="md">
-                    <div className="container">
+                    <div className="container-fluid">
                         <NavbarBrand href="/">Cosmos Tracker</NavbarBrand>
                         <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar>
@@ -45,14 +45,14 @@ export default class Navbar extends Component {
             return (<Nav className="ml-auto" navbar>
                 <UncontrolledDropdown nav inNavbar>
                     <DropdownToggle nav caret>
-                        Alexander Catchpole
+                        {this.props.user.name}
                     </DropdownToggle>
                     <DropdownMenu >
                         <DropdownItem>
                             Settings
                         </DropdownItem>
                         <DropdownItem divider />
-                        <DropdownItem>
+                        <DropdownItem onClick={this.props.logout}>
                             Logout
                         </DropdownItem>
                     </DropdownMenu>

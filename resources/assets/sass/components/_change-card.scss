@@ -1,0 +1,36 @@
+.change-card {
+  padding: 10px;
+  height: 185px;
+  width: 100%;
+  background-color: red;
+  border-radius: 8px;
+}
+
+.change-card-inner {
+  height: 100%;
+  width: 100%;
+}
+
+.change-card-inner  {
+  h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+    color: white;
+    font-weight: 700;
+  }
+}
+
+.change-card-btc {
+  background-image: linear-gradient(120deg, #fda085 0%, #f6d365 100%);
+}
+
+.change-card-bch {
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+
+.change-card-eth {
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.change-card-ltc {
+  background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+}

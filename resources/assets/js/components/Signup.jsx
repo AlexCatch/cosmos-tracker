@@ -1,20 +1,51 @@
 import React, { Component } from 'react';
-import { Card, CardBody, Button, Form, FormGroup, Label, Input, FormText} from 'reactstrap';
+import { Card, CardBody, Button, Form, FormGroup, Label, Input, FormText, Alert} from 'reactstrap';
+
+import {
+    Redirect
+} from 'react-router-dom';
 
 export default class Signup extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
+        console.log(props);
         this.state = {
         };
+        this.register = this.register.bind(this);
+        this.renderContent = this.renderContent.bind(this);
     }
     render() {
+        return this.renderContent();
+    }
+    renderContent() {
+        if (this.props.sentTo) {
+            return (
+                <div className="container">
+                    <div className="row justify-content-md-center mt-5">
+                        <div className="col-md-8">
+                            {this.props.error && <Alert color="danger">
+                                {this.props.error}
+                            </Alert>}
+                            <Card>
+                                <CardBody>
+                                    <h5>An email has been sent to {this.props.sentTo}. Please click the link in the email to confirm your account.</h5>
+                                </CardBody>
+                            </Card>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
         return (
             <div className="container">
                 <div className="row justify-content-md-center mt-5">
                     <div className="col-md-8">
+                        {this.props.error && <Alert color="danger">
+                            {this.props.error}
+                        </Alert>}
                         <Card>
                             <CardBody>
-                                <Form>
+                                <Form onSubmit={this.register}>
                                     <FormGroup>
                                         <Label for="exampleEmail">Name</Label>
                                         <Input type="text" name="name" id="exampleEmail" placeholder="Name" />
@@ -29,9 +60,9 @@ export default class Signup extends Component {
                                     </FormGroup>
                                     <FormGroup>
                                         <Label for="examplePassword">Confirm Password</Label>
-                                        <Input type="password" name="password" id="examplePassword" placeholder="Confirm Password" />
+                                        <Input type="password" name="password_confirmation" id="examplePassword" placeholder="Confirm Password" />
                                     </FormGroup>
-                                    <Button color="primary">Sign up</Button>
+                                    <Button disabled={this.props.loading} color="primary">{this.props.loading ? "Creating your account..." : "Sign Up"}</Button>
                                 </Form>
                             </CardBody>
                         </Card>
@@ -39,5 +70,9 @@ export default class Signup extends Component {
                 </div>
             </div>
         );
+    }
+    register(e) {
+        e.preventDefault();
+        this.props.register(e.target.name.value, e.target.email.value, e.target.password.value, e.target.password_confirmation.value);
     }
 }

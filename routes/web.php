@@ -12,6 +12,6 @@
 */
 
 Route::view('/{path?}', 'index')
-    ->where('path', '.*')
+    ->where('path', '^((?!api).)*$')
     ->name('react');
 
