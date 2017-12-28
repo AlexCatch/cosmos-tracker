@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
-import { Card, CardBody, Button, Form, FormGroup, Label, Input, FormText, Alert} from 'reactstrap';
+
 import ChangeQuickLookCard from './ChangeQuickLookCard';
+import TransactionsPanel from './TransactionsPanel';
+import ChartPanel from './ChartPanel';
 
 export default class Dashboard extends Component {
     constructor(props) {
         super(props);
-        console.log(props);
-        this.state = {
-            loading: false
-        };
     }
     componentDidMount() {
         if (!this.props.authenticated) {
@@ -17,8 +15,8 @@ export default class Dashboard extends Component {
     }
     render() {
         return (
-            <div className="container-fluid">
-                <div className="row mt-4">
+            <div className="container-fluid p-4">
+                <div className="row">
                     <div className="col-md-6 col-sm-6 col-lg-3 col-xs-12">
                         <ChangeQuickLookCard type="btc" gradientClassName="change-card-btc"/>
                     </div>
@@ -33,6 +31,12 @@ export default class Dashboard extends Component {
                     </div>
                 </div>
                 <div className="row mt-4">
+                    <div className="col-lg-3 col-md-5 col-sm-12">
+                        <TransactionsPanel/>
+                    </div>
+                    <div className="col-lg-9 col-md-7 col-sm-12 mt-md-0 mt-sm-4 mt-xs-4">
+                        <ChartPanel/>
+                    </div>
                 </div>
             </div>
         );

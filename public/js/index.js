@@ -3936,11 +3936,11 @@ module.exports = ReactInstanceMap;
 /* unused harmony export Container */
 /* unused harmony export Row */
 /* unused harmony export Col */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return Navbar; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return NavbarBrand; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return NavbarToggler; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return Nav; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return NavItem; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return Navbar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return NavbarBrand; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return NavbarToggler; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return Nav; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return NavItem; });
 /* unused harmony export NavDropdown */
 /* unused harmony export NavLink */
 /* unused harmony export Breadcrumb */
@@ -3950,9 +3950,9 @@ module.exports = ReactInstanceMap;
 /* unused harmony export ButtonGroup */
 /* unused harmony export ButtonToolbar */
 /* unused harmony export Dropdown */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return DropdownItem; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return DropdownMenu; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return DropdownToggle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return DropdownItem; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return DropdownMenu; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return DropdownToggle; });
 /* unused harmony export Fade */
 /* unused harmony export Badge */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return Card; });
@@ -3963,7 +3963,7 @@ module.exports = ReactInstanceMap;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return CardBody; });
 /* unused harmony export CardBlock */
 /* unused harmony export CardFooter */
-/* unused harmony export CardHeader */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return CardHeader; });
 /* unused harmony export CardImg */
 /* unused harmony export CardImgOverlay */
 /* unused harmony export Carousel */
@@ -3990,15 +3990,15 @@ module.exports = ReactInstanceMap;
 /* unused harmony export Tooltip */
 /* unused harmony export Table */
 /* unused harmony export ListGroup */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return Form; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return Form; });
 /* unused harmony export FormFeedback */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return FormGroup; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return FormGroup; });
 /* unused harmony export FormText */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return Input; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return Input; });
 /* unused harmony export InputGroup */
 /* unused harmony export InputGroupAddon */
 /* unused harmony export InputGroupButton */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return Label; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return Label; });
 /* unused harmony export Media */
 /* unused harmony export Pagination */
 /* unused harmony export PaginationItem */
@@ -4006,13 +4006,13 @@ module.exports = ReactInstanceMap;
 /* unused harmony export TabContent */
 /* unused harmony export TabPane */
 /* unused harmony export Jumbotron */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return Collapse; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return Collapse; });
 /* unused harmony export ListGroupItem */
 /* unused harmony export ListGroupItemText */
 /* unused harmony export ListGroupItemHeading */
 /* unused harmony export UncontrolledAlert */
 /* unused harmony export UncontrolledButtonDropdown */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return UncontrolledDropdown; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return UncontrolledDropdown; });
 /* unused harmony export UncontrolledNavDropdown */
 /* unused harmony export UncontrolledTooltip */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
@@ -32061,21 +32061,54 @@ var Navbar = function (_Component) {
         key: 'render',
         value: function render() {
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["o" /* Navbar */],
+                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["p" /* Navbar */],
                 { color: 'primary', dark: true, expand: 'md' },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     { className: 'container-fluid' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["p" /* NavbarBrand */],
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["q" /* NavbarBrand */],
                         { href: '/' },
-                        'Cosmos Tracker'
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/img/cosmos-logo.png' }),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'p',
+                            null,
+                            'Cosmos Tracker'
+                        )
                     ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["q" /* NavbarToggler */], { onClick: this.toggle }),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["r" /* NavbarToggler */], { onClick: this.toggle }),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["e" /* Collapse */],
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["f" /* Collapse */],
                         { isOpen: this.state.isOpen, navbar: true },
-                        this.renderNavOptions()
+                        this.renderNavOptions(),
+                        this.props.authenticated && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* Nav */],
+                            { className: 'ml-auto', navbar: true },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["s" /* UncontrolledDropdown */],
+                                { nav: true, inNavbar: true },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* DropdownToggle */],
+                                    { nav: true, caret: true },
+                                    this.props.user.name
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["h" /* DropdownMenu */],
+                                    null,
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["g" /* DropdownItem */],
+                                        null,
+                                        'Settings'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["g" /* DropdownItem */], { divider: true }),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["g" /* DropdownItem */],
+                                        { onClick: this.props.logout },
+                                        'Logout'
+                                    )
+                                )
+                            )
+                        )
                     )
                 )
             );
@@ -32090,40 +32123,61 @@ var Navbar = function (_Component) {
         value: function renderNavOptions() {
             if (this.props.authenticated) {
                 return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* Nav */],
-                    { className: 'ml-auto', navbar: true },
+                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* Nav */],
+                    { className: 'mr-auto', navbar: true },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["r" /* UncontrolledDropdown */],
-                        { nav: true, inNavbar: true },
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["o" /* NavItem */],
+                        null,
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["h" /* DropdownToggle */],
-                            { nav: true, caret: true },
-                            this.props.user.name
-                        ),
+                            __WEBPACK_IMPORTED_MODULE_2_react_router_dom__["a" /* Link */],
+                            { className: 'nav-link', to: '/dashboard' },
+                            'Dashboard'
+                        )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["o" /* NavItem */],
+                        null,
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["g" /* DropdownMenu */],
-                            null,
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["f" /* DropdownItem */],
-                                null,
-                                'Settings'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["f" /* DropdownItem */], { divider: true }),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["f" /* DropdownItem */],
-                                { onClick: this.props.logout },
-                                'Logout'
-                            )
+                            __WEBPACK_IMPORTED_MODULE_2_react_router_dom__["a" /* Link */],
+                            { className: 'nav-link', to: '/dashboard' },
+                            'Bitcoin'
+                        )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["o" /* NavItem */],
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            __WEBPACK_IMPORTED_MODULE_2_react_router_dom__["a" /* Link */],
+                            { className: 'nav-link', to: '/dashboard' },
+                            'Bitcoin Cash'
+                        )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["o" /* NavItem */],
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            __WEBPACK_IMPORTED_MODULE_2_react_router_dom__["a" /* Link */],
+                            { className: 'nav-link', to: '/dashboard' },
+                            'Ethereum'
+                        )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["o" /* NavItem */],
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            __WEBPACK_IMPORTED_MODULE_2_react_router_dom__["a" /* Link */],
+                            { className: 'nav-link', to: '/dashboard' },
+                            'Litecoin'
                         )
                     )
                 );
             }
 
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* Nav */],
+                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* Nav */],
                 { className: 'ml-auto', navbar: true },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* NavItem */],
+                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["o" /* NavItem */],
                     null,
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         __WEBPACK_IMPORTED_MODULE_2_react_router_dom__["a" /* Link */],
@@ -32132,7 +32186,7 @@ var Navbar = function (_Component) {
                     )
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* NavItem */],
+                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["o" /* NavItem */],
                     null,
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         __WEBPACK_IMPORTED_MODULE_2_react_router_dom__["a" /* Link */],
@@ -38553,27 +38607,27 @@ var Login = function (_Component) {
                                 __WEBPACK_IMPORTED_MODULE_1_reactstrap__["d" /* CardBody */],
                                 null,
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* Form */],
+                                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Form */],
                                     { onSubmit: this.login },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* FormGroup */],
+                                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* FormGroup */],
                                         null,
                                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* Label */],
+                                            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* Label */],
                                             { 'for': 'exampleEmail' },
                                             'Email'
                                         ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Input */], { type: 'email', name: 'email', id: 'exampleEmail', placeholder: 'Email' })
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* Input */], { type: 'email', name: 'email', id: 'exampleEmail', placeholder: 'Email' })
                                     ),
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* FormGroup */],
+                                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* FormGroup */],
                                         null,
                                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* Label */],
+                                            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* Label */],
                                             { 'for': 'examplePassword' },
                                             'Password'
                                         ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Input */], { type: 'password', name: 'password', id: 'examplePassword', placeholder: 'Password' })
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* Input */], { type: 'password', name: 'password', id: 'examplePassword', placeholder: 'Password' })
                                     ),
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Button */],
@@ -38734,47 +38788,47 @@ var Signup = function (_Component) {
                                 __WEBPACK_IMPORTED_MODULE_1_reactstrap__["d" /* CardBody */],
                                 null,
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* Form */],
+                                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Form */],
                                     { onSubmit: this.register },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* FormGroup */],
+                                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* FormGroup */],
                                         null,
                                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* Label */],
+                                            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* Label */],
                                             { 'for': 'exampleEmail' },
                                             'Name'
                                         ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Input */], { type: 'text', name: 'name', id: 'exampleEmail', placeholder: 'Name' })
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* Input */], { type: 'text', name: 'name', id: 'exampleEmail', placeholder: 'Name' })
                                     ),
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* FormGroup */],
+                                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* FormGroup */],
                                         null,
                                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* Label */],
+                                            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* Label */],
                                             { 'for': 'exampleEmail' },
                                             'Email'
                                         ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Input */], { type: 'email', name: 'email', id: 'exampleEmail', placeholder: 'Email' })
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* Input */], { type: 'email', name: 'email', id: 'exampleEmail', placeholder: 'Email' })
                                     ),
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* FormGroup */],
+                                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* FormGroup */],
                                         null,
                                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* Label */],
+                                            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* Label */],
                                             { 'for': 'examplePassword' },
                                             'Password'
                                         ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Input */], { type: 'password', name: 'password', id: 'examplePassword', placeholder: 'Password' })
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* Input */], { type: 'password', name: 'password', id: 'examplePassword', placeholder: 'Password' })
                                     ),
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* FormGroup */],
+                                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* FormGroup */],
                                         null,
                                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* Label */],
+                                            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* Label */],
                                             { 'for': 'examplePassword' },
                                             'Confirm Password'
                                         ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Input */], { type: 'password', name: 'password_confirmation', id: 'examplePassword', placeholder: 'Confirm Password' })
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* Input */], { type: 'password', name: 'password_confirmation', id: 'examplePassword', placeholder: 'Confirm Password' })
                                     ),
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Button */],
@@ -38835,8 +38889,9 @@ var mapStateToProps = function mapStateToProps(state) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_reactstrap__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ChangeQuickLookCard__ = __webpack_require__(298);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ChangeQuickLookCard__ = __webpack_require__(298);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__TransactionsPanel__ = __webpack_require__(330);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ChartPanel__ = __webpack_require__(331);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -38849,19 +38904,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
+
+
 var Dashboard = function (_Component) {
     _inherits(Dashboard, _Component);
 
     function Dashboard(props) {
         _classCallCheck(this, Dashboard);
 
-        var _this = _possibleConstructorReturn(this, (Dashboard.__proto__ || Object.getPrototypeOf(Dashboard)).call(this, props));
-
-        console.log(props);
-        _this.state = {
-            loading: false
-        };
-        return _this;
+        return _possibleConstructorReturn(this, (Dashboard.__proto__ || Object.getPrototypeOf(Dashboard)).call(this, props));
     }
 
     _createClass(Dashboard, [{
@@ -38876,32 +38927,45 @@ var Dashboard = function (_Component) {
         value: function render() {
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
-                { className: 'container-fluid' },
+                { className: 'container-fluid p-4' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'row' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'col-md-6 col-sm-6 col-lg-3 col-xs-12' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__ChangeQuickLookCard__["a" /* default */], { type: 'btc', gradientClassName: 'change-card-btc' })
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'col-md-6 col-sm-6 col-lg-3 col-xs-12' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__ChangeQuickLookCard__["a" /* default */], { type: 'bch', gradientClassName: 'change-card-bch' })
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'col-md-6 col-sm-6 col-lg-3 col-xs-12 mt-lg-0 mt-sm-4 mt-xs-4' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__ChangeQuickLookCard__["a" /* default */], { type: 'eth', gradientClassName: 'change-card-eth' })
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'col-md-6 col-sm-6 col-lg-3 col-xs-12 mt-lg-0 mt-sm-4 mt-xs-4' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__ChangeQuickLookCard__["a" /* default */], { type: 'ltc', gradientClassName: 'change-card-ltc' })
+                    )
+                ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     { className: 'row mt-4' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'div',
-                        { className: 'col-md-6 col-sm-6 col-lg-3 col-xs-12' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__ChangeQuickLookCard__["a" /* default */], { type: 'btc', gradientClassName: 'change-card-btc' })
+                        { className: 'col-lg-3 col-md-5 col-sm-12' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__TransactionsPanel__["a" /* default */], null)
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'div',
-                        { className: 'col-md-6 col-sm-6 col-lg-3 col-xs-12' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__ChangeQuickLookCard__["a" /* default */], { type: 'bch', gradientClassName: 'change-card-bch' })
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'col-md-6 col-sm-6 col-lg-3 col-xs-12 mt-lg-0 mt-sm-4 mt-xs-4' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__ChangeQuickLookCard__["a" /* default */], { type: 'eth', gradientClassName: 'change-card-eth' })
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'col-md-6 col-sm-6 col-lg-3 col-xs-12 mt-lg-0 mt-sm-4 mt-xs-4' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__ChangeQuickLookCard__["a" /* default */], { type: 'ltc', gradientClassName: 'change-card-ltc' })
+                        { className: 'col-lg-9 col-md-7 col-sm-12 mt-md-0 mt-sm-4 mt-xs-4' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__ChartPanel__["a" /* default */], null)
                     )
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'row mt-4' })
+                )
             );
         }
     }]);
@@ -38919,6 +38983,7 @@ var Dashboard = function (_Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_reactstrap__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LoadingIndicator__ = __webpack_require__(329);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -38926,6 +38991,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 
 
 
@@ -38970,7 +39036,8 @@ var ChangeQuickLookCard = function (_Component) {
                             { className: 'text-faded' },
                             'BTC'
                         ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        this.state.loading && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__LoadingIndicator__["a" /* default */], null),
+                        !this.state.loading && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'div',
                             { className: 'change-card-text-center mb-1' },
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -38984,7 +39051,7 @@ var ChangeQuickLookCard = function (_Component) {
                                 '$152,456'
                             )
                         ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        !this.state.loading && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'h5',
                             { className: 'text-faded' },
                             '$17,456 / BTC'
@@ -39000,7 +39067,8 @@ var ChangeQuickLookCard = function (_Component) {
                             { className: 'text-faded' },
                             'BCH'
                         ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        this.state.loading && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__LoadingIndicator__["a" /* default */], null),
+                        !this.state.loading && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'div',
                             { className: 'change-card-text-center mb-1' },
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -39014,7 +39082,7 @@ var ChangeQuickLookCard = function (_Component) {
                                 '$152,456'
                             )
                         ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        !this.state.loading && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'h5',
                             { className: 'text-faded' },
                             '$17,456 / BCH'
@@ -39030,7 +39098,8 @@ var ChangeQuickLookCard = function (_Component) {
                             { className: 'text-faded' },
                             'ETH'
                         ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        this.state.loading && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__LoadingIndicator__["a" /* default */], null),
+                        !this.state.loading && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'div',
                             { className: 'change-card-text-center mb-1' },
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -39044,7 +39113,7 @@ var ChangeQuickLookCard = function (_Component) {
                                 '$152,456'
                             )
                         ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        !this.state.loading && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'h5',
                             { className: 'text-faded' },
                             '$17,456 / ETH'
@@ -39060,7 +39129,8 @@ var ChangeQuickLookCard = function (_Component) {
                             { className: 'text-faded' },
                             'LTC'
                         ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        this.state.loading && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__LoadingIndicator__["a" /* default */], null),
+                        !this.state.loading && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'div',
                             { className: 'change-card-text-center mb-1' },
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -39074,7 +39144,7 @@ var ChangeQuickLookCard = function (_Component) {
                                 '$152,456'
                             )
                         ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        !this.state.loading && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'h5',
                             { className: 'text-faded' },
                             '$17,456 / LTC'
@@ -40165,6 +40235,213 @@ var PrivateRoute = function PrivateRoute(_ref) {
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (PrivateRoute);
+
+/***/ }),
+/* 329 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+
+
+var LoadingIndicator = function LoadingIndicator() {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "div",
+        { className: "loading-indicator-container" },
+        " ",
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            "div",
+            { className: "sk-folding-cube" },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "sk-cube1 sk-cube" }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "sk-cube2 sk-cube" }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "sk-cube4 sk-cube" }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "sk-cube3 sk-cube" })
+        )
+    );
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (LoadingIndicator);
+
+/***/ }),
+/* 330 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_reactstrap__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LoadingIndicator__ = __webpack_require__(329);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__TransactionPanelCard__ = __webpack_require__(332);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+
+
+var TransactionsPanel = function (_Component) {
+    _inherits(TransactionsPanel, _Component);
+
+    function TransactionsPanel() {
+        _classCallCheck(this, TransactionsPanel);
+
+        var _this = _possibleConstructorReturn(this, (TransactionsPanel.__proto__ || Object.getPrototypeOf(TransactionsPanel)).call(this));
+
+        _this.state = {
+            loading: true
+        };
+        return _this;
+    }
+
+    _createClass(TransactionsPanel, [{
+        key: 'render',
+        value: function render() {
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["c" /* Card */],
+                null,
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["e" /* CardHeader */],
+                    null,
+                    'Transactions'
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["d" /* CardBody */],
+                    { className: 'transaction-panel-body' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__TransactionPanelCard__["a" /* default */], null),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__TransactionPanelCard__["a" /* default */], null),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__TransactionPanelCard__["a" /* default */], null),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__TransactionPanelCard__["a" /* default */], null),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__TransactionPanelCard__["a" /* default */], null),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__TransactionPanelCard__["a" /* default */], null),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__TransactionPanelCard__["a" /* default */], null),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__TransactionPanelCard__["a" /* default */], null),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__TransactionPanelCard__["a" /* default */], null),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__TransactionPanelCard__["a" /* default */], null),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__TransactionPanelCard__["a" /* default */], null),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__TransactionPanelCard__["a" /* default */], null),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__TransactionPanelCard__["a" /* default */], null),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__TransactionPanelCard__["a" /* default */], null),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__TransactionPanelCard__["a" /* default */], null)
+                )
+            );
+        }
+    }]);
+
+    return TransactionsPanel;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+/* harmony default export */ __webpack_exports__["a"] = (TransactionsPanel);
+
+/***/ }),
+/* 331 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_reactstrap__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LoadingIndicator__ = __webpack_require__(329);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+var ChartPanel = function (_Component) {
+    _inherits(ChartPanel, _Component);
+
+    function ChartPanel() {
+        _classCallCheck(this, ChartPanel);
+
+        var _this = _possibleConstructorReturn(this, (ChartPanel.__proto__ || Object.getPrototypeOf(ChartPanel)).call(this));
+
+        _this.state = {
+            loading: true
+        };
+        return _this;
+    }
+
+    _createClass(ChartPanel, [{
+        key: 'render',
+        value: function render() {
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["c" /* Card */],
+                null,
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["e" /* CardHeader */],
+                    null,
+                    'Chart'
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["d" /* CardBody */], { className: 'chart-panel-body' })
+            );
+        }
+    }]);
+
+    return ChartPanel;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+/* harmony default export */ __webpack_exports__["a"] = (ChartPanel);
+
+/***/ }),
+/* 332 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_reactstrap__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LoadingIndicator__ = __webpack_require__(329);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+var TransactionsPanelCard = function (_Component) {
+    _inherits(TransactionsPanelCard, _Component);
+
+    function TransactionsPanelCard() {
+        _classCallCheck(this, TransactionsPanelCard);
+
+        var _this = _possibleConstructorReturn(this, (TransactionsPanelCard.__proto__ || Object.getPrototypeOf(TransactionsPanelCard)).call(this));
+
+        _this.state = {
+            loading: true
+        };
+        return _this;
+    }
+
+    _createClass(TransactionsPanelCard, [{
+        key: 'render',
+        value: function render() {
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'transaction-panel-card' });
+        }
+    }]);
+
+    return TransactionsPanelCard;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+/* harmony default export */ __webpack_exports__["a"] = (TransactionsPanelCard);
 
 /***/ })
 /******/ ]);

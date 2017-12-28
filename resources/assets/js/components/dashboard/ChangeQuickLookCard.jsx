@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Card, CardBody, Button, Form, FormGroup, Label, Input, FormText, Alert} from 'reactstrap';
+import LoadingIndicator from '../LoadingIndicator';
+
 
 export default class ChangeQuickLookCard extends Component {
     constructor() {
@@ -24,11 +26,12 @@ export default class ChangeQuickLookCard extends Component {
                 return (
                     <div className="change-card-inner d-flex flex-column justify-content-between">
                         <h5 className="text-faded">BTC</h5>
-                        <div className="change-card-text-center mb-1">
+                        {this.state.loading && <LoadingIndicator/>}
+                        {!this.state.loading && <div className="change-card-text-center mb-1">
                             <h1 className="m-0">+12.56%</h1>
                             <h6 className="m-0">$152,456</h6>
-                        </div>
-                        <h5 className="text-faded">$17,456 / BTC</h5>
+                        </div>}
+                        {!this.state.loading && <h5 className="text-faded">$17,456 / BTC</h5>}
                     </div>
                 );
                 break;
@@ -36,11 +39,12 @@ export default class ChangeQuickLookCard extends Component {
                 return (
                     <div className="change-card-inner d-flex flex-column justify-content-between">
                         <h5 className="text-faded">BCH</h5>
-                        <div className="change-card-text-center mb-1">
+                        {this.state.loading && <LoadingIndicator/>}
+                        {!this.state.loading && <div className="change-card-text-center mb-1">
                             <h1 className="m-0">+12.56%</h1>
                             <h6 className="m-0">$152,456</h6>
-                        </div>
-                        <h5 className="text-faded">$17,456 / BCH</h5>
+                        </div>}
+                        {!this.state.loading && <h5 className="text-faded">$17,456 / BCH</h5>}
                     </div>
                 );
                 break;
@@ -48,11 +52,12 @@ export default class ChangeQuickLookCard extends Component {
                 return (
                     <div className="change-card-inner d-flex flex-column justify-content-between">
                         <h5 className="text-faded">ETH</h5>
-                        <div className="change-card-text-center mb-1">
+                        {this.state.loading && <LoadingIndicator/>}
+                        {!this.state.loading && <div className="change-card-text-center mb-1">
                             <h1 className="m-0">+12.56%</h1>
                             <h6 className="m-0">$152,456</h6>
-                        </div>
-                        <h5 className="text-faded">$17,456 / ETH</h5>
+                        </div>}
+                        {!this.state.loading && <h5 className="text-faded">$17,456 / ETH</h5>}
                     </div>
                 );
                 break;
@@ -60,11 +65,12 @@ export default class ChangeQuickLookCard extends Component {
                 return (
                     <div className="change-card-inner d-flex flex-column justify-content-between">
                         <h5 className="text-faded">LTC</h5>
-                        <div className="change-card-text-center mb-1">
+                        {this.state.loading && <LoadingIndicator/>}
+                        {!this.state.loading && <div className="change-card-text-center mb-1">
                             <h1 className="m-0">+12.56%</h1>
                             <h6 className="m-0">$152,456</h6>
-                        </div>
-                        <h5 className="text-faded">$17,456 / LTC</h5>
+                        </div>}
+                        {!this.state.loading && <h5 className="text-faded">$17,456 / LTC</h5>}
                     </div>
                 );
                 break;
